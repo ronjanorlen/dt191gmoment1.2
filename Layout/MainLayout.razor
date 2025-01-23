@@ -1,0 +1,26 @@
+﻿@inherits LayoutComponentBase
+
+ <header class="pb-3">
+        <div class="container d-flex header">
+            <!-- Sätt logga till vänster, datum till höger -->
+            <h2 class="me-auto logo"><a asp-page="/Index">Blazor</a></h2>
+            <div class="mt-4 date">Dagens datum är: @DateTime.Now.ToString("yyyy-MM-dd")</div>
+        </div>
+    </header>
+
+    <div class="container mt-4">
+        <!-- Meny i vänsterspalt -->
+        <div class="row content">
+           <NavMenu />
+
+            <!-- Huvudinnehåll i högerspalt -->
+            <main class="col-md-9 col-sm-12">
+                 @Body <!-- Sidinnehåll -->
+            </main>
+        </div>
+    </div>
+
+    <footer class="container mt-4">
+        Av: Ronja Norlén - Kontakta mig via e-post: rono2300@@studenter.miun.se
+    </footer>
+

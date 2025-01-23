@@ -1,0 +1,5 @@
+bin/
+obj/
+**/wwwroot/lib/
+Properties/launchSettings.json
+.vscode/settings.json

@@ -1,0 +1,120 @@
+/* Header */
+header {
+    background-color:#2F4157;
+  }
+  
+  header .logo {
+    padding: 15px 20px;
+    margin-top: 0.5em;
+    border: 1px solid;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+  header a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Datum */
+  header .date {
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 5px 10px;
+    height: 40px;
+    color: #fff;
+  }
+  
+  /* sidomeny */
+  .sidebar-menu {
+    padding: 0 1.2rem 0 0;
+    box-sizing: border-box;
+  }
+  
+  nav ul.list-group {
+    border: 1px solid #2F4157;
+    padding: 8px;
+    background-color: #577C8E;
+    height: 100%;
+  }
+  
+  .list-group-item {
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .list-group-item:hover {
+    background-color: #C8D8E4;
+    font-weight: bold;
+  }
+
+  .active {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  nav a {
+    text-decoration: none;
+    color:#2F4157;
+  }
+  
+  /* Huvudinnehåll */
+  main {
+    border: 1px solid #7a7a7a;
+    border-radius: 8px;
+    padding: 1.8rem !important;
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .content {
+    min-height: 75vh;
+  }
+  
+  /* Felmeddelande */
+  #blazor-error-ui, .loading-progress {
+    display: none;
+  }
+  
+  /* Footer */
+  footer {
+    border: 1px solid #7a7a7a;
+    padding: 1.2rem;
+    background-color:#C8D8E4;
+    text-align: center;
+    width: 100%;
+    margin: 2rem auto;
+    box-sizing: border-box;
+  }
+  
+  /* Media queries - små skärmar */
+  
+  @media (max-width: 768px) {
+    main {
+      padding: 1.2em !important;
+    }
+  
+    .sidebar-menu {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 1em;
+    }
+  
+    .content {
+      padding: 15px;
+    }
+  
+    .date {
+      text-align: center;
+      font-size: 0.8em;
+    }
+  
+    footer {
+      margin: 0 auto;
+    }
+  }
+  
+  
+  
