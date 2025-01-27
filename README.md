@@ -9,5 +9,4 @@ Uppgiften går ut på att skapa en webbplats med Blazor WebAssembly. Webbplatsen
 **Av:** Ronja Norlén  
 **Kurs:** Webbutveckling med .NET  
 **Program:** Webbutveckling  
-**Skola:** Mittuniversitetet  
-**Termin, År:** HT, 2024
+**Skola:** Mittuniversitetet 
