@@ -1,0 +1,25 @@
+<div class="date">
+    <p><strong>Dagens datum:</strong> @currentDate <strong>Klockan:</strong> @currentTime</p>
+          
+</div>
+
+@code {
+    private string currentDate = DateTime.Now.ToString("yyyy-MM-dd"); // Aktuellt datum 
+    private string currentTime = DateTime.Now.ToString("HH:mm:ss"); // Aktuell tid
+    private Timer? timer; // Timer 
+
+  // Initiera komponent
+    protected override void OnInitialized() {
+      // Uppdatera varje sekund
+      timer = new Timer(1000); 
+      timer.Elapsed += UpdateTime;
+      // Starta timer
+      timer.Start();
+    }
+
+  // Uppdatera klockan 
+    private void UpdateTime(object? sender, ElapsedEventArgs e) {
+      currentTime = DateTime.Now.ToString("HH:mm:ss");
+      InvokeAsync(StateHasChanged);
+    }
+}

@@ -17,12 +17,8 @@ header {
   }
   
   /* Datum */
-  header .date {
-    border: 1px solid;
-    border-radius: 8px;
-    padding: 5px 10px;
-    height: 40px;
-    color: #fff;
+   .date {
+    color: #2F4157;
   }
   
   /* sidomeny */
@@ -108,7 +104,6 @@ header {
   
     .date {
       text-align: center;
-      font-size: 0.8em;
     }
   
     footer {

@@ -1,4 +1,37 @@
 @page "/convert"
-@inject HttpClient Http 
 
 <h2 class="mb-4">Konvertering</h2>
+
+<article>
+    <h4>Meter till Fot</h4>
+    <label for="meter">Meter:</label>
+    <input type="number" id="meter" @bind="Meter" /> <br>
+    <button class="btn btn-success btn-sm mt-4" @onclick="MetersToFeet">Konvertera</button>
+    <p class="mt-4"><strong>Resultat:</strong> @FeetResult fot</p>
+
+    <h4>Km/h till Miles/hour</h4>
+    <label for="kmh">Km/h</label>
+    <input type="number" id="kmh" @bind="Kmh" /> <br>
+    <button class="btn btn-success btn-sm mt-4" @onclick="KmhToMiles">Konvertera</button>
+    <p class="mt-4"><strong>Resultat:</strong> @MilesResult miles/hour</p> 
+</article>
+
+@code {
+    private decimal Meter = 0;
+    private decimal FeetResult = 0;
+
+    private decimal Kmh = 0; 
+    private int MilesResult = 0;
+
+    // Metod för att konvertera meter till fot, avrunda till 2 decimaler 
+    private void MetersToFeet()
+    {
+        FeetResult = Math.Round(Meter * 3.28084M, 2); 
+    }
+
+    // Metod för att konvertera km/h till miles/hour, avnrunda till heltal 
+    private void KmhToMiles()
+    {
+        MilesResult = (int)Math.Round(Kmh * 0.621371M); 
+    }
+}
